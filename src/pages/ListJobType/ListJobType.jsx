@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import UserNav from "../../components/userNav/userNav";
+import UserNav from "../../components/UserNav/UserNav";
 import { congViecService } from "../../service/congViec.service";
 import Banner from "../../components/ListJobTypeComponent/Banner";
 import Popular from "../../components/ListJobTypeComponent/Popular";
