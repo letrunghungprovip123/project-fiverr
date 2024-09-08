@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Macan';
+  src: url('../public/font/macan-regular.woff2');
+}
+
+@font-face {
+  font-family: 'Domaine';
+  src: url('../public/font/domaine-display-web-medium-italic.woff2');
+}
+
+* {
+  font-family: 'Macan',sans-serif;
+  box-sizing: border-box;
+}
+
+.font{
+  font-family: 'Domaine', sans-serif;
+}
+.hover-green {
+  @apply hover:text-green-500 duration-300;
+}
+
+.button {
+  @apply py-2 px-5 border rounded-md bg-blue-500;
+}
+
+.box-shadow {
+  box-shadow: 0 0 0.880517px rgba(0, 0, 0, 0.029),
+    0 0 2.29197px rgba(0, 0, 0, 0.03), 0 0 5.52px rgba(0, 0, 0, 0.054),
+    0 0 11px rgba(0, 0, 0, 0.09);
+}
+
+.bg {
+  opacity: 1; /* Độ trong suốt mặc định */
+  &:hover {
+    transition: opacity 1s cubic-bezier(.75,0,.25,1);
+    background: radial-gradient(
+      circle at 50% 50%,
+      /* Vị trí và kiểu gradient hình tròn */ #c2ffe2 0%,
+      /* Màu xanh nhạt ở điểm bắt đầu */ #fff 100%
+        /* Màu trắng ở điểm kết thúc */
+    );
+
+  }
+}
+/* src/styles/modal.css */
+
+/* src/styles/modal.css */
+
+/* src/styles/modal.css */
+
+/* src/styles/modal.css */
+
+/* Lớp phủ mờ */
+.overlay-enter {
+  opacity: 0;
+}
+
+.overlay-enter-active {
+  opacity: 0.75;
+  transition: opacity 300ms ease-in-out;
+}
+
+.overlay-exit {
+  opacity: 0.75;
+}
+
+.overlay-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+/* Modal */
+.modal-enter {
+  transform: translateX(-100%); /* Bắt đầu từ bên trái màn hình */
+}
+
+.modal-enter-active {
+  transform: translateX(0);
+  transition: transform 300ms ease-in-out;
+}
+
+.modal-exit {
+  transform: translateX(0);
+}
+
+.modal-exit-active {
+  transform: translateX(-100%); /* Di chuyển về bên trái khi đóng */
+  transition: transform 300ms ease-in-out;
+}
+
+/* Lớp phủ và modal */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Chiếm toàn bộ chiều rộng của màn hình */
+  height: 100vh; /* Chiếm toàn bộ chiều cao của màn hình */
+  background-color: rgba(0, 0, 0, 0.5); /* Màu nền mờ */
+  z-index: 40; /* Đặt thấp hơn so với modal */
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0; /* Bắt đầu từ bên trái */
+  width: 60vw; /* Chiếm một nửa chiều rộng của màn hình */
+  height: 100vh; /* Chiếm toàn bộ chiều cao của màn hình */
+  background-color: #fff;
+  z-index: 50; /* Đặt cao hơn lớp phủ mờ */
+}
+
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+footer {
+  ul {
+    li {
+      margin-bottom: 20px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

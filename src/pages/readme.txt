@@ -1,0 +1,1 @@
+Thu muc page chua cac file dai dien cho cac trang co trong du an. Vd trang home, trang detail, trang dang ky

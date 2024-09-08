@@ -1,0 +1,1 @@
+Thu muc components chua cac components tai su dung trong cac du an hoac cac cau truc layout can chia nho. Luu y la neu component do khong duoc tai su dung nhieu thi khong nen chia components

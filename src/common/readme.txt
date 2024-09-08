@@ -1,0 +1,1 @@
+Thu muc common chua cac file setup mot so gia tri tinh co trong du an. Vd: path duong dan, cac cau validation

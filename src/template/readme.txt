@@ -1,0 +1,1 @@
+thu muc template chua cac template cau truc chung trong du an. Vi du trang chu va cac trang con se luon co header va footer thi ta se tao mot template chua header va footer 
