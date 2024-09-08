@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useSearchParams } from "react-router-dom";
 import { congViecService } from "../../service/congViec.service";
-import UserNav from "../../components/userNav/userNav";
+import UserNav from "../../components/UserNav/UserNav";
 import Nav from "../../components/JobDetailComponent/Nav";
 import InforDetail from "../../components/JobDetailComponent/InforDetail";
 const JobDetailPage = () => {
